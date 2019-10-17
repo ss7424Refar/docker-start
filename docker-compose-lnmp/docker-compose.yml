@@ -28,7 +28,7 @@ services:
       - ./html/:/var/www/html/
       # /usr/local/etc/php/php.ini 有dev和prod之分, 需要拷贝到宿主机rename成php.ini
       # /usr/local/etc/php-fpm.d/www.conf 都会在/usr/local/etc中
-      - ./service/php/etc/:/usr/local/etc/php/:rw
+      # - ./service/php/etc/:/usr/local/etc/php/:rw
     environment:
     - TZ=Asia/Shanghai
   nginx:
